@@ -4,4 +4,22 @@ body {
     top: -80px;
     left: -302px;
     background-color: #F6F3F3;
+    font-family: Merriweather;
+    font-weight: 400;
+}
+
+header {
+    border-bottom: 1px solid #E1E1E1;
+    padding-top: 24px;
+    width: 1920px;
+    height: 97px;
+    top: -1px;
+    gap: 0px;
+}
+
+.container {
+    max-width: 1216px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
