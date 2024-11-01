@@ -64,7 +64,11 @@ header {
     text-align: center;
     color: #F4F6F9;
     left: 300px;
-    top: 1px;
+    top: 0px;
+}
+
+li {
+    border: 1px solid black
 }
 
 @media (max-width: 768px) {
