@@ -36,6 +36,13 @@ header {
     justify-content: flex-start;
 }
 
+.burger {
+    display: none;
+    background-color: none;
+    border: none;
+    font-size: 24px;
+}
+
 .nav-link {
     color: #343030;
     text-decoration: none;
@@ -67,11 +74,7 @@ header {
     top: 0px;
 }
 
-li {
-    border: 1px solid black
-}
-
-@media (max-width: 768px) {
+@media (max-width: 575px) {
     header {
         padding-top: 16px;
     }
@@ -79,10 +82,27 @@ li {
     .container {
         flex-direction: column;
         align-items: flex-start;
+        max-width: 575px;
+        justify-content: space-between;
     }
 
     .logo {
         width: 40px;
         height: 40px;
+    }
+    
+    .navigation {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        row-gap: 10px;
+    }
+
+    .burger li {
+        list-style-type: none;
     }
 }

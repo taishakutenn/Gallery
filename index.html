@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <script src="https://unpkg.com/htmx.org@1.8.4"></script>
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
             <a href="http://127.0.0.1:5500/index.html"><img src="images/image.png" alt="Логотип компании" class="logo"></a>
+            <div class="burger"> <!-- Прописываем бургер, который будет вмден только на малееньких устройствах -->
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">Каталог</a><li></li>
+                    <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">Доставка</a><li>
+                    <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">Оплата</a><li>
+                    <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">Контакты</a><li>
+                    <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">О галерее</a><li>
+                </ul>
+            </div>
             <nav>
                 <ul class="navigation">
                     <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">Каталог</a><li>
