@@ -36,7 +36,11 @@ header {
     justify-content: flex-start;
 }
 
-.burger {
+#burger, [for="burger"] {
+    display: none;
+}
+
+.burger-nav {
     display: none;
     background-color: none;
     border: none;
@@ -87,22 +91,48 @@ header {
     }
 
     .logo {
-        width: 40px;
-        height: 40px;
+        position: fixed;
+        width: 28px;
+        height: 28px;
+        left: 10px;
     }
     
     .navigation {
         display: none;
     }
 
-    .burger {
+    /* .burger-nav {
         display: block;
         flex-direction: column;
         position: absolute;
-        row-gap: 10px;
-    }
+    } */
 
     .burger li {
         list-style-type: none;
     }
+
+    [for="burger"] {
+        display: block;
+        position: fixed;
+        width: 28px;
+        height: 28px;
+        left: 300px;
+    }
+
+    .input {
+        max-width: 575px;
+        left: 50px;
+    }
+    
+    .input-field {
+        width: 216px;
+        height: 24px;
+    }
+    
+    .button-field {
+        width: 68px;
+        height: 28px;
+        left: 155px;
+    }
+    
 }
