@@ -79,7 +79,11 @@ header {
 }
 
 h1 {
-    position: relative;
+    max-width: 1248px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-weight: 700;
     font-size: 24px;
     color: #343030;
@@ -88,15 +92,32 @@ h1 {
 }
 
 .buy-goods {
-    display: inline-flex;
-    position: fixed;
+    max-width: 1248px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     top: 216px;
     gap: 32px;
+    width: 100%;
+}
+
+.card {
+    border: 1px solid #E7E7E7;
 }
 
 .painting {
-    width: 260px;
+    width: 280px;
     height: 168px;
+}
+
+.card-text {
+    color: #343030;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 94px;
+    padding-right: 36px;
 }
 
 @media (max-width: 575px) {
