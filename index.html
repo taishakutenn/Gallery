@@ -47,8 +47,10 @@
                 <img src="images/kartine1.jpg" alt="Рождение венеры" class="painting">
                 <p class="card-text">«Рождение Венеры»<br>Сандро Боттичелли</p>
                 <div class="buy-price">
-                    <p>1000000</p>
-                    <button class="buy-button">Купить</button>
+                    <p class="price">1 000 000 $</p>
+                    <button class="buy-button" hx-get="https://reqres.in/api/products/3" hx-trigger="click" hx-swap=none>
+                        Купить
+                    </button>
                 </div>
             </article>
             <article class="card">
@@ -56,25 +58,48 @@
                 <p class="card-text">«Тайная Вечерня»<br>Леонардо да Винчи</p>
                 <div class="buy-price">
                     <p class="price">3 000 000 $</p>
-                    <button class="buy-button">Купить</button>
+                    <button class="buy-button" hx-get="https://reqres.in/api/products/3" hx-trigger="click" hx-swap=none>
+                        Купить
+                    </button>
                 </div>
             </article>
             <article class="card">
                 <img src="images/kartine3.jpg" alt="Сотворение Адама" class="painting">
                 <p class="card-text">«Сотворение Адама»<br>Микеланджело</p>
                 <div class="buy-price">
-                    <p>1000000</p>
-                    <button class="buy-button">Купить</button>
+                    <p class="price">5 000 000 $</p>
+                    <button class="buy-button" hx-get="https://reqres.in/api/products/3" hx-trigger="click" hx-swap=none>
+                        Купить
+                    </button>
                 </div>
             </article>
             <article class="card">
                 <img src="images/kartine4.jpg" alt="Урок анатомии" class="painting">
                 <p class="card-text">«Урок анатомии»<br>Рембрандт</p>
                 <div class="buy-price">
-                    <p>1000000</p>
-                    <button class="buy-button">Купить</button>
+                    <p class="price">Продана на аукционе</p>
                 </div>
             </article>
         </section>
+    <footer>
+        <div class="container">
+            <a href="http://127.0.0.1:5500/index.html"><img src="images/image.png" alt="Логотип компании" class="logo"></a>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">Каталог</a><li>
+                    <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">Доставка</a><li>
+                    <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">Оплата</a><li>
+                    <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">Контакты</a><li>
+                    <li><a href="http://127.0.0.1:5500/index.html" class="nav-link">О галерее</a><li>
+                </ul>
+            </nav>
+            <div class="contact-details">
+                <section>
+                    <article>+7 (495) 555-55-55</article>
+                    <article>г. Москва, ул. Расплетина, 24</article>
+                </section>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

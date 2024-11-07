@@ -1,6 +1,6 @@
 body {
     background-color: #F6F3F3;
-    font-family: Merriweather, serif;
+    font-family: Merriweather;
     font-weight: 400;
     padding: 0;
     margin: 0;
@@ -141,8 +141,16 @@ h1 {
 
 .price {
     color: #343030;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 16px;
+    line-height: 24px;
+}
+
+footer {
+    max-width: 1920px;
+    height: 96px;
+    background-color: #ECEAEA;
+    padding-top: 320px;
 }
 
 @media (max-width: 575px) {
@@ -168,6 +176,22 @@ h1 {
         display: none;
     }
 
+    .input {
+        max-width: 575px;
+        left: 50px;
+    }
+    
+    .input-field {
+        width: 216px;
+        height: 24px;
+    }
+    
+    .button-field {
+        width: 68px;
+        height: 28px;
+        left: 155px;
+    }
+
     .burger-nav {
         display: none;
         background-color: #F6F3F3;
@@ -185,22 +209,7 @@ h1 {
         width: 28px;
         height: 28px;
         left: 300px;
-    }
-
-    .input {
-        max-width: 575px;
-        left: 50px;
-    }
-    
-    .input-field {
-        width: 216px;
-        height: 24px;
-    }
-    
-    .button-field {
-        width: 68px;
-        height: 28px;
-        left: 155px;
+        z-index: 1000;
     }
 
     #burger:checked + label + div {
@@ -208,5 +217,16 @@ h1 {
         flex-direction: column;
         position: absolute;
     }
+
+    .h1 {
+        max-width: 575px;
+        font-size: 20px;
+        padding-bottom: 39px;
+        padding-top: 45px;
+    }
     
+    .buy-goods {
+        max-width: 575px;
+        flex-direction: column;
+    }
 }
