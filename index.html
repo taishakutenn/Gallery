@@ -42,15 +42,19 @@
     <main>
         <h1>Картины эпохи Возрождения</h1>
     </main>
+    <div id="content" style="display: none;"></div>
         <section class="buy-goods">
             <article class="card">
                 <img src="images/kartine1.jpg" alt="Рождение венеры" class="painting">
                 <p class="card-text">«Рождение Венеры»<br>Сандро Боттичелли</p>
                 <div class="buy-price">
                     <p class="price">1 000 000 $</p>
-                    <button class="buy-button" hx-get="https://reqres.in/api/products/3" hx-trigger="click" hx-swap=none>
+                    <button class="buy-button" hx-get="https://reqres.in/api/products/3" hx-indicator="#spinner" hx-target="#content">
                         Купить
                     </button>
+                    <div id="spinner" class="spinner" style="display: none;">
+                        <div class="loader"></div>
+                    </div>
                 </div>
             </article>
             <article class="card">
